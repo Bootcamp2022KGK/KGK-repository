@@ -50,3 +50,4 @@
     </div>
 
 </div>
+<?php /**PATH /home/krish/Documents/web-dev/KGK_Project/resources/views/components/navbar.blade.php ENDPATH**/ ?>
