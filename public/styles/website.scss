@@ -1,0 +1,13 @@
+/* 
+    Stylesheet that should be imported at the beginning of each view's scss stylesheet.
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    max-width: 1200px;
+}

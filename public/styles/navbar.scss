@@ -1,0 +1,135 @@
+$navbar_link_text_shadow_color: #6663;
+$navbar_link_text_shadow: 1px 1px 1px $navbar_link_text_shadow_color,
+    -1px 1px 1px $navbar_link_text_shadow_color,
+    1px -1px 1px $navbar_link_text_shadow_color,
+    -1px -1px 1px $navbar_link_text_shadow_color;
+
+// Small screens
+.navigation_bar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0.25rem;
+    min-height: 4.75rem;
+    width: 100%;
+    background-color: #fff;
+
+    .menu_icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        top: 4.75rem;
+        left: 0;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 1rem;
+            list-style-type: none;
+        }
+    }
+
+    .nav.hidden {
+        display: none;
+    }
+}
+
+// Large screens
+@media screen and (min-width: 702px) {
+    // .navigation_bar {
+    //     display: flex;
+    //     justify-content: flex-start;
+    //     padding: 1rem 4rem 1.25rem;
+
+    //     .menu_icon {
+    //         display: none;
+    //     }
+
+    //     .logo {
+    //         width: 3.125rem;
+    //         height: 3.125rem;
+
+    //         svg {
+    //             width: 3.125rem;
+    //             height: 3.125rem;
+    //         }
+
+    //         margin-right: 3rem;
+    //     }
+
+    //     .nav {
+    //         display: block;
+
+    //         ul {
+    //             display: flex;
+    //             justify-content: space-between;
+    //             align-items: center;
+
+    //             gap: 1rem;
+    //             list-style-type: none;
+
+    //             a {
+    //                 width: fit-content;
+    //                 text-decoration: none;
+    //                 color: #000;
+
+    //                 li {
+    //                     display: flex;
+    //                     &::after {
+    //                         content: "";
+    //                         width: 1.25rem;
+    //                         height: 1.25rem;
+    //                         display: flex;
+    //                         justify-content: center;
+    //                         align-items: center;
+    //                     }
+    //                 }
+
+    //                 &:hover {
+    //                     text-shadow: $navbar_link_text_shadow;
+    //                 }
+
+    //                 &.products_link:hover {
+    //                     li {
+    //                         &::after {
+    //                             // content: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.63989 8.17711L6.347 7.47L9.99345 11.1164L13.6399 7.47L14.347 8.17711L9.99345 12.5307L5.63989 8.17711Z' fill='black'/%3E%3C/svg%3E%0A");
+    //                             content: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.639893 1.17711L1.347 0.470001L4.99345 4.11645L8.63989 0.470001L9.347 1.17711L4.99345 5.53066L0.639893 1.17711Z' fill='black'/%3E%3C/svg%3E%0A");
+    //                         }
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
+
+    //     .controls {
+    //         display: flex;
+    //         justify-content: flex-end;
+    //         margin-left: auto;
+    //         gap: 1.5rem;
+
+    //         button {
+    //             border: none;
+    //             background: none;
+    //             cursor: pointer;
+
+    //             &:hover {
+    //                 svg {
+    //                     stroke: #0006;
+    //                     stroke-width: 1px;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+}
