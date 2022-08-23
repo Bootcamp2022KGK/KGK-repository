@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -36,4 +37,5 @@
 
 
 
-</html><?php /**PATH /home/gintsauzins/Desktop/KGK_Project/resources/views/homepage.blade.php ENDPATH**/ ?>
+</html>
+<?php /**PATH /home/gintsauzins/Desktop/KGK_Project/resources/views/homepage.blade.php ENDPATH**/ ?>
