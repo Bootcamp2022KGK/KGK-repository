@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/homepage.php', function () {
+Route::get('/homepage', function () {
     return view('homepage');
+});
+
+Route::get('/collection', function () {
+    return view('collection');
 });
