@@ -17,4 +17,6 @@ yarn-error.log
 random.html
 *.css
 *.css.map
-laravel.log
+laravel.
+.env.local
+.env.server
