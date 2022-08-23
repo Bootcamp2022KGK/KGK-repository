@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="{{ asset('styles/card.css') }}">
+<link rel="stylesheet" href="<?php echo e(asset('styles/card.css')); ?>">
 
 
 <div class="card">
@@ -11,3 +11,4 @@
   <button class="card__button">Add to Cart</button>
 </div>
 
+<?php /**PATH /home/kalvisreinis/Desktop/Project_KGK/KGK-repository/resources/views/components/productcard.blade.php ENDPATH**/ ?>
