@@ -1,8 +1,6 @@
 $navbar_link_text_shadow_color: #6663;
-$navbar_link_text_shadow: 1px 1px 1px $navbar_link_text_shadow_color,
-    -1px 1px 1px $navbar_link_text_shadow_color,
-    1px -1px 1px $navbar_link_text_shadow_color,
-    -1px -1px 1px $navbar_link_text_shadow_color;
+$navbar_link_text_shadow: 1px 1px 1px $navbar_link_text_shadow_color, -1px 1px 1px $navbar_link_text_shadow_color,
+    1px -1px 1px $navbar_link_text_shadow_color, -1px -1px 1px $navbar_link_text_shadow_color;
 
 // Small screens
 .navigation_bar {
