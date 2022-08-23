@@ -23,18 +23,18 @@
         </svg>
     </div>
 
-    <nav class="nav">
+    <nav class="nav hidden">
         <ul>
             <a href="/" class="home_link">
                 <li>Home</li>
             </a>
-            <a href="" class="products_link">
+            <a href="/" class="products_link">
                 <li>Products</li>
             </a>
-            <a href="" class="about_link">
+            <a href="/" class="about_link">
                 <li>About</li>
             </a>
-            <a href="" class="contacts_link">
+            <a href="/" class="contacts_link">
                 <li>Contacts</li>
             </a>
         </ul>
