@@ -410,6 +410,20 @@
 
     <x-navbar />
 
+
+    <div class="random_content" style="height: 500px; max-width:80%; margin: 4rem auto; text-align: justify;">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id animi nostrum error, laborum voluptatum quia
+            placeat eum similique temporibus tenetur voluptas ex quibusdam ab iste! Cumque porro eveniet provident fugit
+            sapiente eaque excepturi distinctio minus, corrupti veritatis aut! Ad aperiam, ratione a nostrum, officiis
+            possimus voluptatibus veniam ex id commodi error alias facere, sint modi quas amet repellat pariatur
+            voluptatum ipsa. Quisquam qui nisi quas a ipsam nulla doloribus quam sequi, fugiat excepturi doloremque
+            magni maiores reiciendis quibusdam voluptatibus molestiae. Voluptate aliquam repellendus exercitationem
+            commodi suscipit accusantium facere hic quisquam? Inventore explicabo aliquam, earum natus culpa cumque vero
+            molestias deserunt?</p>
+    </div>
+
+
+    <x-footer />
     {{-- <div
         class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
         @if (Route::has('login'))
