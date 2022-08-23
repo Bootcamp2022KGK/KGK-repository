@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="{{ asset('styles/footer.css') }}">
+<link rel="stylesheet" href="<?php echo e(asset('styles/footer.css')); ?>">
 <footer class="footer">
     <div class="links">
         <div class="info">
@@ -224,3 +224,4 @@
         <span class="rights__text">© 2022, KGK website Powered by Laravel Framework 9.25.1</span>
     </div>
 </footer>
+<?php /**PATH /home/kalvisreinis/Desktop/Project_KGK/KGK-repository/resources/views/components/footer.blade.php ENDPATH**/ ?>
