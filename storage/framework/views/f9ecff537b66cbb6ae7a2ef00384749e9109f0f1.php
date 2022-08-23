@@ -51,3 +51,4 @@
 </body>
 
 </html>
+<?php /**PATH /home/gintsauzins/Desktop/KGK_Project/resources/views/about.blade.php ENDPATH**/ ?>
