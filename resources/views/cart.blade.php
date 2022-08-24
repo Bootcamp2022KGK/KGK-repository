@@ -15,11 +15,7 @@
         <div class="cart">
             <div class="cart__box">
                 <div class="cart__title">Cart</div>
-                <x-cartproduct />
-                <x-cartproduct />
-                <x-cartproduct />
-                <x-cartproduct />
-                <x-cartproduct />
+                <x-cart-product />
             </div>
             <hr class="cart__line">
             <div class="cart__checkout">
