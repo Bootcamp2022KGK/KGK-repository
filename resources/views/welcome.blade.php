@@ -16,20 +16,18 @@
 
 <body>
     <x-navbar />
+
     <div class="landing">
         <div class="landing__top">
             <img class="landing__image"
                 src="https://w0.peakpx.com/wallpaper/761/99/HD-wallpaper-nissan-silvia-s13-tuning-ice-blue-rims-silvia-nissan-racing-bodykit-s13-gigantic-tuning-widebody-car-ice-r-drift-blue-race-car.jpg"
                 alt="lading rims" class="landing__image">
 
-            <a href="#" class="landing__text"> Learn More</a>
+            <a href="/about" class="landing__text"> Learn More</a>
         </div>
     </div>
 
-
-
     <x-footer />
-
 </body>
 
 </html>
