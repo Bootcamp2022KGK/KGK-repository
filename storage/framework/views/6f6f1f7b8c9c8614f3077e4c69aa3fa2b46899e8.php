@@ -4,25 +4,18 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>Laravel</title>
     <link rel="stylesheet" href="<?php echo e(asset('styles/website.css')); ?>">
-    <!-- Fonts -->
     <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-
-
-
+    <link rel="stylesheet" href="<?php echo e(asset('styles/website.css')); ?>">
     <style>
         body {
             font-family: 'Nunito', sans-serif;
         }
     </style>
-
-    <link rel="stylesheet" href="<?php echo e(asset('styles/website.css')); ?>">
 </head>
 
-<body class="antialiased">
-
+<body>
     <?php if (isset($component)) { $__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4 = $component; } ?>
 <?php $component = $__env->getContainer()->make(Illuminate\View\AnonymousComponent::class, ['view' => 'components.navbar','data' => []] + (isset($attributes) ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('navbar'); ?>
@@ -38,17 +31,14 @@
 <?php $component = $__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4; ?>
 <?php unset($__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4); ?>
 <?php endif; ?>
+    <div class="landing">
+        <div class="landing__top">
+            <img class="landing__image"
+                src="https://w0.peakpx.com/wallpaper/761/99/HD-wallpaper-nissan-silvia-s13-tuning-ice-blue-rims-silvia-nissan-racing-bodykit-s13-gigantic-tuning-widebody-car-ice-r-drift-blue-race-car.jpg"
+                alt="lading rims" class="landing__image">
 
-
-    <div class="random_content" style="height: 500px; max-width:80%; margin: 4rem auto; text-align: justify;">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id animi nostrum error, laborum voluptatum quia
-            placeat eum similique temporibus tenetur voluptas ex quibusdam ab iste! Cumque porro eveniet provident fugit
-            sapiente eaque excepturi distinctio minus, corrupti veritatis aut! Ad aperiam, ratione a nostrum, officiis
-            possimus voluptatibus veniam ex id commodi error alias facere, sint modi quas amet repellat pariatur
-            voluptatum ipsa. Quisquam qui nisi quas a ipsam nulla doloribus quam sequi, fugiat excepturi doloremque
-            magni maiores reiciendis quibusdam voluptatibus molestiae. Voluptate aliquam repellendus exercitationem
-            commodi suscipit accusantium facere hic quisquam? Inventore explicabo aliquam, earum natus culpa cumque vero
-            molestias deserunt?</p>
+            <a href="#" class="landing__text"> Learn More</a>
+        </div>
     </div>
 
 

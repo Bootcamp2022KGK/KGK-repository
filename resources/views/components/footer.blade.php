@@ -17,7 +17,8 @@
     <hr class="collection__line">
     <div class="social">
         <form action="" class="social__subscribe">
-            <input type="email" placeholder="Write Yor Email Motherfukaa..." class="social__input">
+            <input type="email" placeholder="Write Yor Email..." class="social__input">
+            <button class="social__button">Send</button>
         </form>
         <div class="social__media">
             <a href="" class="social__media__links">
