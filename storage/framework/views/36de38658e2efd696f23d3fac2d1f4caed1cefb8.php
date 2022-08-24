@@ -190,6 +190,7 @@
             </div>
 
             <hr class="collection__line">
+
             <?php if (isset($component)) { $__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4 = $component; } ?>
 <?php $component = $__env->getContainer()->make(Illuminate\View\AnonymousComponent::class, ['view' => 'components.footer','data' => []] + (isset($attributes) ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('footer'); ?>
@@ -212,4 +213,4 @@
 </body>
 
 </html>
-<?php /**PATH /home/kalvisreinis/Desktop/Project_KGK/KGK-repository/resources/views/collection.blade.php ENDPATH**/ ?>
+<?php /**PATH /home/kalvisreinis/Desktop/Project_KGK/KGK-repository/resources/views/productpage.blade.php ENDPATH**/ ?>
