@@ -1,1 +1,56 @@
 @import "./website.scss";
+
+.about__photos img {
+    padding: 10px 0 0 10px;
+    width: 350px;
+    height: 280px;
+}
+
+.about__text h2,
+p {
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    width: 325px;
+}
+
+.about__quality__frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    gap: 16px;
+    width: 375px;
+    height: 345px;
+    background: #f0f0f0;
+}
+
+.about__quality p {
+    width: 245px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #121212;
+}
+
+@media screen and (min-width: 500px) {
+    .about__text h2,
+    p {
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
+        width: 1000px;
+    }
+
+    .about__quality__frame {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        gap: 16px;
+        width: 1065px;
+        height: 345px;
+        background: #f0f0f0;
+    }
+}
