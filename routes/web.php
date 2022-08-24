@@ -25,11 +25,6 @@ Route::get('/about', function () {
     return view('about');
 });
 
-Route::get('/homepage', function () {
-    return view('homepage');
-});
-
-Route::get('/collection', function () {
-    return view('collection');
-
+Route::get('/products', function () {
+    return view('products');
 });

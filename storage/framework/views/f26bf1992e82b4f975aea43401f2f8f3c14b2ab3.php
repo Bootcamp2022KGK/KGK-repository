@@ -1,4 +1,5 @@
-<link rel="stylesheet" href="{{ asset('styles/card.css') }}">
+<link rel="stylesheet" href="<?php echo e(asset('styles/card.css')); ?>">
+
 
 <div class="card">
     <img class="card__image"
@@ -11,3 +12,4 @@
     <div class="card__code">SCR567</div>
     <button class="card__button">Add to Cart</button>
 </div>
+<?php /**PATH /home/krish/Documents/web-dev/KGK_Project/resources/views/components/productcard.blade.php ENDPATH**/ ?>
