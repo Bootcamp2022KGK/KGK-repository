@@ -6,6 +6,9 @@ use Illuminate\View\Component;
 
 class CartProduct extends Component
 {
+
+    public $quantity, $product_code;
+
     /**
      * Create a new component instance.
      *
