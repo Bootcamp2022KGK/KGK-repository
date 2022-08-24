@@ -21,6 +21,7 @@ class ProductCard extends Component
         $this->type = $product->type;
         $this->price = $product->price;
         $this->description = $product->description;
+        $this->image = $product->picture_name;
     }
 
     /**

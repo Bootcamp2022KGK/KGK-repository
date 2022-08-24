@@ -1,9 +1,7 @@
 <link rel="stylesheet" href="<?php echo e(asset('styles/card.css')); ?>">
 
 <div class="card">
-    <img class="card__image"
-        src="https://d3tye5etyupvvn.cloudfront.net/img/bmw-wheels-rims-beyern-antler-5-lug-silver-mirror-cut-face-std-700.jpg"
-        alt="rims">
+    <img class="card__image" src="<?php echo e(asset("images/products/$image.jpg")); ?>"  alt="rims">
 
     <div class="card__price"><?php echo e($price); ?></div>
     <div class="card__name"><?php echo e($model); ?></div>
