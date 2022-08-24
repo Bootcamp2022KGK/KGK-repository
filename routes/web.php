@@ -36,3 +36,4 @@ Route::get('/productpage', function () {
 Route::get('/cart', function () {
     return view('cart');
 });
+
