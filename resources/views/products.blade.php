@@ -23,16 +23,9 @@
             </div>
             <hr class="collection__line">
             <div class="collection__gallery">
-                <x-productcard />
-                <x-productcard />
-                <x-productcard />
-                <x-productcard />
-                <x-productcard />
-                <x-productcard />
-                <x-productcard />
-                <x-productcard />
-                <x-productcard />
-                <x-productcard />
+                @foreach ($products as $product)
+                    <x-product-card :product="$product"></x-product-card>
+                @endforeach
             </div>
 
             <hr class="collection__line">

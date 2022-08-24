@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <x-navbar />
 
     <div class="about__photos">
         <img src="https://images.unsplash.com/photo-1621712151262-60bd142ba19f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8d2hlZWx8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
