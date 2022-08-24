@@ -26,6 +26,14 @@ Route::get('/about', function () {
     return view('about');
 });
 
+Route::get('/homepage', function () {
+    return view('homepage');
+});
+
+Route::get('/productpage', function () {
+    return view('productpage');
+});
+
 Route::get('/products', [ProductController::class, 'getAllProducts']);
 
 Route::get('/products/{productName}', [ProductController::class, 'getProduct']);
