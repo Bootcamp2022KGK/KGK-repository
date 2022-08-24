@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="<?php echo e(asset('styles/cartproduct.css')); ?>">
+<link rel="stylesheet" href="<?php echo e(asset('styles/cart-product.css')); ?>">
 
 
 <div class="cartproduct">

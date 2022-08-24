@@ -30,13 +30,13 @@ Route::get('/homepage', function () {
     return view('homepage');
 });
 
-Route::get('/productpage', function () {
-    return view('productpage');
-});
+// Route::get('/productpage', function () {
+//     return view('productpage');
+// });
+
+Route::get('/products/{manufacturer}/{model}/{size}', [ProductController::class, 'getProduct']);
 
 Route::get('/products', [ProductController::class, 'getAllProducts']);
-
-Route::get('/products/{productName}', [ProductController::class, 'getProduct']);
 
 Route::get('/cart', function () {
     return view('cart');

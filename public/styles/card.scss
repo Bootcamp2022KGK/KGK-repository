@@ -13,6 +13,11 @@ $grey: #414141;
     margin: 15px auto;
     transition: box-shadow 1s;
 
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
     &:hover {
         border: 1px solid #000;
         box-shadow: 1px 10px 10px 2px rgba(0, 0, 0, 0.7);

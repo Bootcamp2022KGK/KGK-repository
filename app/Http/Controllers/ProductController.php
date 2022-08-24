@@ -13,8 +13,9 @@ class ProductController extends Controller
         return view('products', ['products' => $productsList]);
     }
 
-    public function getProduct()
+    public function getProduct($manufacturer, $model, $size)
     {
-        return view('product');
+        $product = Product::where('manufacturer', $manufacturer)->where('model', $model)->where('size', $size)->first();
+        return view('product', ['product' => $product]);
     }
 }
