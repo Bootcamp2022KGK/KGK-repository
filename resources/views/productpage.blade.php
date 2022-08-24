@@ -37,6 +37,7 @@
 
             <hr class="collection__line">
 
+            <x-footer />
         </div>
 
 

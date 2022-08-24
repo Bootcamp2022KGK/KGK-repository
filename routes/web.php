@@ -29,7 +29,11 @@ Route::get('/homepage', function () {
     return view('homepage');
 });
 
-Route::get('/collection', function () {
-    return view('collection');
-
+Route::get('/productpage', function () {
+    return view('productpage');
 });
+
+Route::get('/cart', function () {
+    return view('cart');
+});
+

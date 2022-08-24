@@ -10,15 +10,14 @@ body {
     margin: 0 auto;
 }
 
-.collection{
+.collection {
     padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-
-    &__title{
-        font-family: 'Assistant';
+    &__title {
+        font-family: "Assistant";
         font-style: normal;
         font-weight: 400;
         font-size: 30px;
@@ -27,14 +26,14 @@ body {
         margin: 20px 0 20px 0;
     }
 
-    &__filter{
+    &__filter {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         margin: 0 0 10px 0;
     }
-    &__productcount{
-        font-family: 'Assistant';
+    &__productcount {
+        font-family: "Assistant";
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -43,7 +42,7 @@ body {
         color: #000000;
     }
 
-    &__sort{
+    &__sort {
         border: none;
         outline: 0;
         font-size: px;
@@ -54,21 +53,46 @@ body {
         cursor: pointer;
         width: 120px;
         font-size: 14px;
-        transition: font-size 0,5s;
+        transition: font-size 0, 5s;
 
-        &:hover{
-            background-color: rgb(65, 65, 65);            
-          }
+        &:hover {
+            background-color: rgb(65, 65, 65);
+        }
     }
 
-    &__gallery{
+    &__gallery {
         display: grid;
         grid-template-columns: auto auto auto auto;
-        gap: 3%;
+        gap: 1%;
         margin-bottom: 100px;
     }
 
-    &__line{
-        width: 110%;
+    &__line {
+        width: 102%;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .collection__gallery {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    .collection__line {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .collection__gallery {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (max-width: 740px) {
+    .collection__gallery {
+        display: grid;
+        gap: 0;
+        grid-template-columns: auto;
     }
 }
