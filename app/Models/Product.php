@@ -23,5 +23,4 @@ class Product extends Model
         'picture_name',
         'picture_amount',
     ];
-
 }
