@@ -1,0 +1,124 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem 0.85rem;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.info {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+
+    &__header {
+        font-family: "Assistant";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 116%;
+        color: #121211;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: #121212;
+        width: 150px;
+        margin: 20px 0 0 0;
+        font-weight: 400;
+        font-size: 18px;
+
+        &:hover {
+            color: grey;
+        }
+    }
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 40px 10% 0 10%;
+
+    &__subscribe {
+        height: 50px;
+    }
+
+    &__input {
+        width: 250px;
+        height: 50px;
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+    &__button {
+        height: 50px;
+        border-radius: 5px;
+        width: 50px;
+        background-color: white;
+    }
+
+    &__media {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        &__links svg {
+            margin-right: 20px;
+            height: 30px;
+            width: 30px;
+        }
+    }
+}
+
+.payment {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5%;
+
+    &__method {
+        margin: 0 2% 5% 2%;
+    }
+}
+
+.rights {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    &__text {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.line {
+    width: 110%;
+}
+
+@media only screen and (max-width: 700px) {
+    .social {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &__subscribe {
+            margin: 0 0 30px 0;
+        }
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .social__input {
+        width: 150px;
+    }
+}

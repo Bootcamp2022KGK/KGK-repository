@@ -1,0 +1,221 @@
+$navbar_link_text_shadow_color: #6663;
+$navbar_link_text_shadow: 1px 1px 1px $navbar_link_text_shadow_color, -1px 1px 1px $navbar_link_text_shadow_color,
+    1px -1px 1px $navbar_link_text_shadow_color, -1px -1px 1px $navbar_link_text_shadow_color;
+
+// Small screens
+.navigation_bar {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0.5rem 0.25rem;
+    min-height: 4.75rem;
+    width: 100%;
+    background-color: #fff;
+
+    .menu_icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: auto;
+        cursor: pointer;
+
+        &:hover {
+            svg {
+                stroke: #0006;
+                stroke-width: 1px;
+            }
+        }
+
+        svg.hidden {
+            display: none;
+        }
+    }
+
+    .logo {
+        width: 3.125rem; // width: 50px;
+        height: 3.125rem; // height: 50px;
+        margin: 0 auto;
+        transform: translate(25%);
+
+        svg {
+            width: 3.125rem;
+            height: 3.125rem;
+        }
+    }
+
+    .nav {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        min-height: calc(100vh - 4.75rem);
+        top: 4.75rem;
+        left: 0;
+        background-color: #fff;
+        padding: 1rem 2rem;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 1rem;
+            list-style-type: none;
+            width: 100%;
+
+            margin-bottom: auto;
+
+            a {
+                width: fit-content;
+                text-decoration: none;
+                color: #000;
+                width: 100%;
+
+                li {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+
+                    &::after {
+                        content: "";
+                        width: 1.25rem;
+                        height: 1.25rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+
+                &:hover {
+                    text-shadow: $navbar_link_text_shadow;
+                }
+
+                &.products_link:hover {
+                    li {
+                        &::after {
+                            content: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.537 5.80958C11.5684 5.73335 11.6182 5.66606 11.6819 5.61371C11.7455 5.56137 11.8212 5.52558 11.9021 5.50955C11.9829 5.49351 12.0665 5.49772 12.1454 5.52181C12.2242 5.54589 12.2959 5.58909 12.354 5.64758L16.354 9.64758C16.4006 9.69402 16.4375 9.7492 16.4627 9.80994C16.4879 9.87069 16.5009 9.93581 16.5009 10.0016C16.5009 10.0673 16.4879 10.1325 16.4627 10.1932C16.4375 10.254 16.4006 10.3091 16.354 10.3556L12.354 14.3556C12.2601 14.4495 12.1328 14.5022 12 14.5022C11.8672 14.5022 11.7399 14.4495 11.646 14.3556C11.5521 14.2617 11.4994 14.1344 11.4994 14.0016C11.4994 13.8688 11.5521 13.7415 11.646 13.6476L14.793 10.5016H4C3.86739 10.5016 3.74021 10.4489 3.64645 10.3551C3.55268 10.2614 3.5 10.1342 3.5 10.0016C3.5 9.86897 3.55268 9.74179 3.64645 9.64802C3.74021 9.55426 3.86739 9.50158 4 9.50158H14.793L11.646 6.35558C11.5757 6.28563 11.5279 6.19637 11.5085 6.09915C11.4891 6.00193 11.499 5.90114 11.537 5.80958Z' fill='%23333030'/%3E%3C/svg%3E%0A");
+                        }
+                    }
+                }
+            }
+        }
+
+        .profile_icon {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+
+            background: none;
+            border: none;
+            cursor: pointer;
+
+            margin-bottom: 2rem;
+        }
+
+        .social_media_links {
+            display: flex;
+            gap: 1.5rem;
+
+            a {
+                text-decoration: none;
+
+                &:hover {
+                    svg {
+                        path {
+                            fill: rgb(0, 140, 255);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .nav.hidden {
+        display: none;
+    }
+
+    .controls {
+        display: flex;
+        margin-left: auto;
+        padding: 0 0.5rem;
+        gap: 1rem;
+
+        button {
+            background: none;
+            border: none;
+            cursor: pointer;
+
+            &.profile_icon {
+                display: none;
+            }
+
+            &:hover {
+                svg {
+                    stroke: #0006;
+                    stroke-width: 1px;
+                }
+            }
+        }
+    }
+}
+
+// Large screens
+@media screen and (min-width: 702px) {
+    .navigation_bar {
+        display: flex;
+        justify-content: flex-start;
+        padding: 1rem 4rem 1.25rem;
+
+        .menu_icon {
+            display: none;
+        }
+
+        .logo {
+            margin-left: 0;
+            margin-right: 3rem;
+        }
+
+        .nav {
+            position: relative;
+            flex-direction: row;
+            min-height: fit-content;
+            width: fit-content;
+            top: 0;
+            padding: 0;
+
+            ul {
+                flex-direction: row;
+                align-items: center;
+
+                a {
+                    &.products_link:hover {
+                        li {
+                            &::after {
+                                content: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.639893 1.17711L1.347 0.470001L4.99345 4.11645L8.63989 0.470001L9.347 1.17711L4.99345 5.53066L0.639893 1.17711Z' fill='black'/%3E%3C/svg%3E%0A");
+                            }
+                        }
+                    }
+                }
+            }
+
+            .profile_icon,
+            .social_media_links {
+                display: none;
+            }
+        }
+
+        .controls {
+            justify-content: flex-end;
+            gap: 1.5rem;
+
+            button {
+                &.profile_icon {
+                    display: block;
+                }
+            }
+        }
+    }
+}

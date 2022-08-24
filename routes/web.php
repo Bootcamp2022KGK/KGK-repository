@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -11,12 +12,32 @@ use Illuminate\Support\Facades\Route;
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
 |
-*/
+ */
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/homepage.php', function () {
+Route::get('/home', function () {
     return view('homepage');
+});
+
+Route::get('/about', function () {
+    return view('about');
+});
+
+Route::get('/homepage', function () {
+    return view('homepage');
+});
+
+Route::get('/productpage', function () {
+    return view('productpage');
+});
+
+Route::get('/products', [ProductController::class, 'getAllProducts']);
+
+Route::get('/products/{productName}', [ProductController::class, 'getProduct']);
+
+Route::get('/cart', function () {
+    return view('cart');
 });
