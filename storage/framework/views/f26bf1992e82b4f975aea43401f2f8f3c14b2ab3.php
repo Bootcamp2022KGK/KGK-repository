@@ -1,6 +1,5 @@
 <link rel="stylesheet" href="<?php echo e(asset('styles/card.css')); ?>">
 
-
 <div class="card">
     <img class="card__image"
         src="https://d3tye5etyupvvn.cloudfront.net/img/bmw-wheels-rims-beyern-antler-5-lug-silver-mirror-cut-face-std-700.jpg"
