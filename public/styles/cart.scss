@@ -16,7 +16,10 @@ body {
 .cart {
     display: flex;
     flex-direction: column;
-    min-height: 1000px;
+
+    &__box {
+        min-height: 200px;
+    }
 
     &__title {
         font-size: 50px;
