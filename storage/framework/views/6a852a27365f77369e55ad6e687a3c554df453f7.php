@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="{{ asset('styles/cart-product.css') }}">
+<link rel="stylesheet" href="<?php echo e(asset('styles/cartproduct.css')); ?>">
 
 
 <div class="cartproduct">
@@ -28,3 +28,4 @@
     </div>
 </div>
 <hr class="cartproduct__line">
+<?php /**PATH /home/krish/Documents/web-dev/KGK_Project/resources/views/components/cart-product.blade.php ENDPATH**/ ?>
