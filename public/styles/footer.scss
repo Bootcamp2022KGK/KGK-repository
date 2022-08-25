@@ -49,7 +49,7 @@
     }
 
     &__input {
-        width: 250px;
+        width: 220px;
         height: 50px;
         border-radius: 5px;
         padding: 5px;
@@ -101,6 +101,12 @@
     width: 110%;
 }
 
+@media only screen and (max-width: 905px) {
+    .social__input {
+        width: 150px;
+    }
+}
+
 @media only screen and (max-width: 700px) {
     .social {
         flex-direction: column;
@@ -109,6 +115,10 @@
 
         &__subscribe {
             margin: 0 0 30px 0;
+        }
+
+        &__input {
+            width: 150px;
         }
     }
 
