@@ -75,8 +75,8 @@
 
 
 </body>
-
 <script src="{{ asset('js/addToCart.js') }}"></script>
 <script src="{{ asset('js/filterSortToggle.js') }}"></script>
+
 
 </html>
