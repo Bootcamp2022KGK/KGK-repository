@@ -33,7 +33,6 @@ Route::get('/homepage', function () {
 Route::get('/productpage', function () {
     return view('productpage');
 });
-
 ////this is about link page
 Route::get('/about', function () {
     return view('about');
