@@ -5,22 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/styles/about.css">
+    <link rel="stylesheet" href="/style/about.css">
 </head>
 
 <body>
-<<<<<<< HEAD
-    <div class=about__container>
-        <div class="about__photos">
-            <img src="https://images.unsplash.com/photo-1639928201694-c2ab1503c8b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHdoZWVscyUyMHR1bmVkJTIwY2Fyc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-                alt="">
-            <img src="https://images.unsplash.com/photo-1594500067480-fedcbb960b73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHdoZWVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                alt="">
-            <img src="https://images.unsplash.com/photo-1614689304159-273632ab5c5a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FyJTIwd2hlZWx8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
-                alt="" srcset="">
-        </div>
-=======
-    <x-navbar />
+    <?php if (isset($component)) { $__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4 = $component; } ?>
+<?php $component = $__env->getContainer()->make(Illuminate\View\AnonymousComponent::class, ['view' => 'components.navbar','data' => []] + (isset($attributes) ? (array) $attributes->getIterator() : [])); ?>
+<?php $component->withName('navbar'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $constructor = (new ReflectionClass(Illuminate\View\AnonymousComponent::class))->getConstructor()): ?>
+<?php $attributes = $attributes->except(collect($constructor->getParameters())->map->getName()->all()); ?>
+<?php endif; ?>
+<?php $component->withAttributes([]); ?>
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4)): ?>
+<?php $component = $__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4; ?>
+<?php unset($__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4); ?>
+<?php endif; ?>
 
     <div class="about__photos">
         <img src="https://images.unsplash.com/photo-1621712151262-60bd142ba19f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8d2hlZWx8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
@@ -29,11 +32,10 @@
             alt="">
         <img src="https://images.unsplash.com/photo-1614689304159-273632ab5c5a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FyJTIwd2hlZWx8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
             alt="" srcset="">
->>>>>>> 2908e95f04c31515c3b57845a551af6ee296a550
     </div>
 
     <div class="about__text">
-        <h2>About company</h2>
+        <h1>About</h1>
 
         <p>KGK Wheels, founded in 1996, originally supplied alloy wheels directly to the trade, however in 1998
             was launched and the game changed forever.
@@ -53,12 +55,8 @@
     </div>
 
     <div class="about__quality">
-        <div class="about__quality__frame">
-            <p>Our quality promise</p>
-            <p>Quality is never an accident. It is always the result of intelligent effort.
-                We spend most of our time and energy to find good design and to achieve high quality.
-                Every single detail from material to technique is thought through with obsessive attention.
-                If our product doesn't satisfy you, we'll take it back.</p>
+        <div class="about__frame">
+
         </div>
     </div>
 
@@ -68,3 +66,4 @@
 </body>
 
 </html>
+<?php /**PATH /home/krish/Documents/web-dev/KGK_Project/resources/views/about.blade.php ENDPATH**/ ?>

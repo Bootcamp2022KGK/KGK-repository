@@ -7,7 +7,6 @@
     <title>Laravel</title>
     <link rel="stylesheet" href="{{ asset('styles/website.css') }}">
     <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('styles/website.css') }}">
     <style>
         body {
             font-family: 'Nunito', sans-serif;
@@ -17,12 +16,14 @@
 
 <body>
     <x-navbar />
+
     <div class="landing">
         <div class="landing__top">
-            <img src="#" alt="lading rims" class="landing__image">
-        </div>
-    </div>
+            <img class="landing__image"
+                src="https://w0.peakpx.com/wallpaper/761/99/HD-wallpaper-nissan-silvia-s13-tuning-ice-blue-rims-silvia-nissan-racing-bodykit-s13-gigantic-tuning-widebody-car-ice-r-drift-blue-race-car.jpg"
+                alt="lading rims" class="landing__image">
 
+<<<<<<< HEAD
 
     {{-- <div
         class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
@@ -157,13 +158,13 @@ http://127.0.0.1:8000/about.php
             <div class="ml-4 text-center text-sm text-gray-500 sm:text-right sm:ml-0">
                 Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
             </div>
+=======
+            <a href="/about" class="landing__text"> Learn More</a>
+>>>>>>> 2908e95f04c31515c3b57845a551af6ee296a550
         </div>
     </div>
-    </div> --}}
-
 
     <x-footer />
-
 </body>
 
 </html>

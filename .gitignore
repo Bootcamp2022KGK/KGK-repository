@@ -18,3 +18,5 @@ random.html
 *.css
 *.css.map
 laravel.log
+.env.local
+.env.server
