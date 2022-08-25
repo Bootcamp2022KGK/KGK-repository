@@ -5,6 +5,16 @@
     justify-content: space-between;
     width: 100%;
 
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    &.hidden {
+        display: none;
+    }
+
     &__list {
         margin-left: 20px;
         display: flex;
