@@ -7,6 +7,8 @@
     <title>KGK Collection</title>
 
     <link rel="stylesheet" href="{{ asset('styles/cart.css') }}">
+
+
 </head>
 
 <body>
@@ -28,7 +30,7 @@
         </div>
 
 
-
 </body>
+<script src="{{ asset('js/makeCartList.js') }}"></script>
 
 </html>
