@@ -19,7 +19,19 @@
             </div>
             <div class="collection__filter">
                 <button class="collection__sort"> Filter and sort</button>
-                <span class="collection__productcount"> 6 products</span>
+                <div class="options hidden">
+                    <span>Filter by:</span>
+                    <div class="filter__options">
+                        <label for="filter_size"></label>
+                        <input type="checkbox" id="filter_size">
+                    </div>
+                    <span>Sort by:</span>
+                    <div class="sort__options">
+
+                    </div>
+                </div>
+
+                <span class="collection__productcount"> {{ count($products) }} products</span>
             </div>
             <hr class="collection__line">
             <div class="collection__gallery">
@@ -37,5 +49,6 @@
 </body>
 
 <script src="{{ asset('js/addToCart.js') }}"></script>
+<script src="{{ asset('js/filterSortToggle.js') }}"></script>
 
 </html>

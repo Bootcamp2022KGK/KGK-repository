@@ -32,6 +32,10 @@ Route::get('/homepage', function () {
 
 Route::get('/products/{manufacturer}/{model}/{size}', [ProductController::class, 'getProduct']);
 
+Route::get('/products/filter/{filter}', [ProductController::class, 'filterProducts']);
+
+Route::get('/products/sort/{sort}', [ProductController::class, 'sortProducts']);
+
 Route::get('/products', [ProductController::class, 'getAllProducts']);
 
 Route::get('/cart', function () {

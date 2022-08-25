@@ -31,6 +31,13 @@ body {
         flex-direction: row;
         justify-content: space-between;
         margin: 0 0 10px 0;
+
+        .options {
+        }
+
+        .options.hidden {
+            display: none;
+        }
     }
     &__productcount {
         font-family: "Assistant";
