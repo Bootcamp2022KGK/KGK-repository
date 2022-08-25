@@ -30,10 +30,6 @@ Route::get('/homepage', function () {
     return view('homepage');
 });
 
-Route::get('/login', function () {
-    return view('login');
-});
-
 Route::get('/products/{manufacturer}/{model}/{size}', [ProductController::class, 'getProduct']);
 
 Route::get('/products', [ProductController::class, 'getAllProducts']);
