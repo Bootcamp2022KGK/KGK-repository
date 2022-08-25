@@ -20,3 +20,4 @@ random.html
 laravel.log
 .env.local
 .env.server
+.env copy
