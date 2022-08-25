@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>KGK Home</title>
-    <link rel="stylesheet" href="{{ asset('styles/website.css') }}">
+    <link rel="stylesheet" href="{{ asset('styles/login.css') }}">
     <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('styles/website.css') }}">
     <style>
@@ -17,14 +17,13 @@
 
 <body>
     <x-navbar />
-    <div class="landing">
-        <div class="landing__top">
-            <img class="landing__image"
-                src="https://w0.peakpx.com/wallpaper/761/99/HD-wallpaper-nissan-silvia-s13-tuning-ice-blue-rims-silvia-nissan-racing-bodykit-s13-gigantic-tuning-widebody-car-ice-r-drift-blue-race-car.jpg"
-                alt="lading rims" class="landing__image">
+    <div class="login">
+        <form action="" class="login__form">
+            <input type="text" class="login__input">
+            <input type="password" class="login__psw">
+            <button class="login__submit">Login</button>
 
-            <a href="#" class="landing__text"> Learn More</a>
-        </div>
+        </form>
     </div>
 
 
