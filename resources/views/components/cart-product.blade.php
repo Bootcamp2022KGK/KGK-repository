@@ -1,18 +1,17 @@
 <link rel="stylesheet" href="{{ asset('styles/cart-product.css') }}">
 
-
-<div class="cartproduct">
+<div class="cartproduct hidden">
     <div class="cartproduct__list">
         <img class="cartproduct__image"
             src="https://d3tye5etyupvvn.cloudfront.net/img/bmw-wheels-rims-beyern-antler-5-lug-silver-mirror-cut-face-std-700.jpg"
             alt="rims">
 
-        <div class="cartproduct__name">BMW 21 melnas</div>
+        <div class="cartproduct__name"></div>
     </div>
     <div class="cartproduct__list2">
         <div class="cartproduct__quantity">
             <button class="cartproduct__minus">-</button>
-            <input type="number" class="cartproduct__quantitynumber">
+            <input type="number" class="cartproduct__quantitynumber" disabled>
             <button class="cartproduct__plus">+</button>
         </div>
         <button class="cartproduct__delete">
@@ -24,7 +23,7 @@
                     d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
             </svg>
         </button>
-        <div class="cartproduct__price">Summa: 180</div>
+        <div class="cartproduct__price">Price: </div>
     </div>
 </div>
 <hr class="cartproduct__line">

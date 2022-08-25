@@ -21,7 +21,7 @@
             </div>
             <hr class="cart__line">
             <div class="cart__checkout">
-                <div class="cart__subtotal">Summa: 10000 e</div>
+                <div class="cart__subtotal">Total: - EUR</div>
                 <div class="cart__subtotalinfo">Taxes and shipping calculated at checkout</div>
                 <button class="cart__buttonchekout">CheckOut</button>
             </div>
