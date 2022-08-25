@@ -7,7 +7,7 @@ use Illuminate\View\Component;
 class ProductCard extends Component
 {
 
-    public $manufacturer, $model, $type, $price, $description, $image;
+    public $manufacturer, $model, $type, $size, $price, $description, $image;
 
     /**
      * Create a new component instance.
@@ -19,7 +19,8 @@ class ProductCard extends Component
         $this->manufacturer = $product->manufacturer;
         $this->model = $product->model;
         $this->type = $product->type;
-        $this->price = $product->price;
+        $this->size = $product->size;
+        $this->price = number_format($product->price, 2);
         $this->description = $product->description;
         $this->image = $product->picture_name;
     }

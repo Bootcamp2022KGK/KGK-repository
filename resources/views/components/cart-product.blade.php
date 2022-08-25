@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="{{ asset('styles/cartproduct.css') }}">
+<link rel="stylesheet" href="{{ asset('styles/cart-product.css') }}">
 
 
 <div class="cartproduct">
