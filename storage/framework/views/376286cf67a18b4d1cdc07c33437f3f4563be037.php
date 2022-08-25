@@ -9,6 +9,6 @@
         <div class="card__producer"><?php echo e($manufacturer); ?></div>
         <span><?php echo e($size); ?></span>
     </a>
-    <button class="card__button">Add to Cart</button>
+    <button class="card__button" data-code="<?php echo e($code); ?>">Add to Cart</button>
 </div>
 <?php /**PATH /home/krish/Documents/web-dev/KGK_Project/resources/views/components/product-card.blade.php ENDPATH**/ ?>

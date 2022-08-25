@@ -58,12 +58,14 @@
             <hr class="product__line">
 
             <a href="">
-                <button class="card__button">
+                <button class="card__button" data-code="{{ $product['code'] }}">
                     Add to Cart
                 </button>
             </a>
 
         </div>
 </body>
+
+<script src="{{ asset('js/addToCart.js') }}"></script>
 
 </html>

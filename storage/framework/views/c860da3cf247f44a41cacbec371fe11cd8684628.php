@@ -63,5 +63,7 @@
 
 </body>
 
+<script src="<?php echo e(asset('js/addToCart.js')); ?>"></script>
+
 </html>
 <?php /**PATH /home/krish/Documents/web-dev/KGK_Project/resources/views/products.blade.php ENDPATH**/ ?>

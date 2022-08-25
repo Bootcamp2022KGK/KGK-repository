@@ -78,13 +78,15 @@
             <hr class="product__line">
 
             <a href="">
-                <button class="card__button">
+                <button class="card__button" data-code="<?php echo e($product['code']); ?>">
                     Add to Cart
                 </button>
             </a>
 
         </div>
 </body>
+
+<script src="<?php echo e(asset('js/addToCart.js')); ?>"></script>
 
 </html>
 <?php /**PATH /home/krish/Documents/web-dev/KGK_Project/resources/views/product.blade.php ENDPATH**/ ?>
