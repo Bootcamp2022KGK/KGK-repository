@@ -30,16 +30,24 @@ Route::get('/homepage', function () {
     return view('homepage');
 });
 
-Route::get('/productpage', function () {
-    return view('productpage');
+Route::get('/products/{manufacturer}/{model}/{size}', [ProductController::class, 'getProduct']);
+
+Route::get('/products', [ProductController::class, 'getAllProducts']);
+
+Route::get('/cart', function () {
+    return view('cart');
 });
 ////this is about link page
 Route::get('/about', function () {
     return view('about');
 })->name('about');
 
-Route::get('/products/{productName}', [ProductController::class, 'getProduct']);
+////this is about link page
+Route::get('/welcome', function () {
+    return view('welcome');
+})->name('welcome');
 
-Route::get('/cart', function () {
-    return view('cart');
-});
+////this is about link page
+Route::get('/homepage', function () {
+    return view('homepage');
+})->name('homepage');

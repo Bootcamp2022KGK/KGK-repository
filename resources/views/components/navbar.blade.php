@@ -31,7 +31,7 @@
             <a href="{{ route('welcome') }}" class="home_link">
                 <li>Home</li>
             </a>
-            <a href="{{ route('productpage') }}" class="products_link">
+            <a href="/products" class="products_link">
                 <li>Products</li>
             </a>
             <a href="{{ route('about') }}" class="about_link">
