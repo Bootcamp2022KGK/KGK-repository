@@ -13,12 +13,13 @@ class ProductController extends Controller
         return view('products', ['products' => $productsList]);
     }
 
-    public function getProduct($manufacturer, $model, $size)
+    public function getProduct($manufacturer, $model, $size, $code)
     {
         $product = Product::
             where('manufacturer', $manufacturer)
             ->where('model', $model)
             ->where('size', $size)
+            ->where('code', $code)
         //   ->where('code', $code)
             ->first();
         return view('product', ['product' => $product]);

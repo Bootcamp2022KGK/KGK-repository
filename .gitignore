@@ -21,3 +21,4 @@ laravel.log
 .env.local
 .env.server
 .env copy
+.env
