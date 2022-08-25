@@ -15,7 +15,13 @@ class ProductController extends Controller
 
     public function getProduct($manufacturer, $model, $size)
     {
-        $product = Product::where('manufacturer', $manufacturer)->where('model', $model)->where('size', $size)->first();
+        $product = Product::
+            where('manufacturer', $manufacturer)
+            ->where('model', $model)
+            ->where('size', $size)
+        //   ->where('code', $code)
+            ->first();
         return view('product', ['product' => $product]);
     }
+
 }

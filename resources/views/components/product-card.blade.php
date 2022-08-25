@@ -9,5 +9,6 @@
         <div class="card__producer">{{ $manufacturer }}</div>
         <span>{{ $size }}</span>
     </a>
-    <button class="card__button">Add to Cart</button>
+    <button type="button" class="card__button" id="click1" onclick="addToStorage()">Add to Cart</button>
 </div>
+<script src="/js/addToLocal.js"></script>
