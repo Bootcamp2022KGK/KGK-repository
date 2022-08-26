@@ -55,7 +55,7 @@
                             <td><input type="text" class="input__code"></td>
                             <td><input type="text" class="input__code"></td>
                             <td><input type="text" class="input__code"></td>
-                            <td><input type="text" class="input__code"></td>
+                            <td><input type="file" id="selectedFile" /></td>
                             <td><button>Submit</button></td>
                         </tr>
                     </table>

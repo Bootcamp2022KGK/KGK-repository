@@ -74,7 +74,8 @@ td {
 }
 
 .admin__inputtable input {
-    width: 95%;
+    width: 100%;
+    height: 30px;
 }
 
 .admin__inputtable {
@@ -84,5 +85,9 @@ td {
 
 .admin__inputtable button {
     width: 100%;
-    height: 100%;
+    height: 30px;
+}
+
+#selectedFile {
+    width: 90px;
 }
