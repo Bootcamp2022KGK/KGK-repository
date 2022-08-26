@@ -41,7 +41,6 @@ Route::get('/products', [ProductController::class, 'getAllProducts']);
 Route::get('/cart', function () {
     return view('cart');
 });
-
 ////this is about link page
 Route::get('/about', function () {
     return view('about');

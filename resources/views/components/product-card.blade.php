@@ -9,5 +9,5 @@
         <div class="card__producer">{{ $manufacturer }}</div>
         <span>{{ $size }}</span>
     </a>
-    <button class="card__button">Add to Cart</button>
+    <button class="card__button" data-code="{{ $code }}">Add to Cart</button>
 </div>

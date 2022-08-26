@@ -35,5 +35,7 @@
 
 
 </body>
+<script src="{{ asset('js/addToCart.js') }}"></script>
+
 
 </html>
