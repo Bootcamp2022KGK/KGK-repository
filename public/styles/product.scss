@@ -1,0 +1,15 @@
+@import "./website.scss";
+
+.card__button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 10px;
+    color: white;
+    text-decoration: underline;
+    width: 321px;
+    height: 47px;
+    background: #000000;
+}

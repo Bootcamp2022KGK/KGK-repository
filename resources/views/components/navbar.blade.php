@@ -41,6 +41,7 @@
                 <li>Blog</li>
 
             </a>
+
         </ul>
 
         <button class="icon profile_icon">

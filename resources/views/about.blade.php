@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/style/about.css">
+    <link rel="stylesheet" href="/styles/about.css">
 </head>
 
 <body>
@@ -42,12 +42,16 @@
 
     <div class="about__quality">
         <div class="about__frame">
-
+            <p>Our quality promise</p>
+            <p>Quality is never an accident. It is always the result of intelligent effort.
+                We spend most of our time and energy to find good design and to achieve high quality.
+                Every single detail from material to technique is thought through with obsessive attention.
+                If our product doesn't satisfy you, we'll take it back.</p>
         </div>
     </div>
 
 
-
+    <x-footer />
 
 </body>
 
