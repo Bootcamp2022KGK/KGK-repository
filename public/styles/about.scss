@@ -1,4 +1,19 @@
-@import "./website.scss";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about__container {
+    display: flex;
+    flex-direction: column;
+}
 
 .about__photos img {
     padding: 10px 0 0 10px;
@@ -6,7 +21,7 @@
     height: 280px;
 }
 
-.about__text h2,
+.about__text h1,
 p {
     flex-direction: column;
     padding: 10px;
