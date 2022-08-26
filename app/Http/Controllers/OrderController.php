@@ -13,8 +13,16 @@ class OrderController extends Controller
     {
         $data = json_decode($request->getContent(), true);
         $keys = array_keys($data);
+        $total = 0;
 
-        $order = Order::create();
+        foreach ($keys as $key) {
+            $productPrice = Product::where('code', $key)->first('price')->price;
+            $total = floatval($total) + floatval($productPrice) * floatval($data[$key]);
+        }
+
+        $order = Order::create([
+            'total' => $total,
+        ]);
 
         foreach ($keys as $key) {
             DB::table('order_items')->insert([
@@ -35,6 +43,8 @@ class OrderController extends Controller
         $data["orderId"] = $orderId;
         $data['orderData'] = Order::where('id', $orderId)->get();
         $data['items'] = [];
+
+        // dd($data);
 
         foreach ($orderItems as $item) {
             $info = Product::where('code', $item->productCode)->first();
