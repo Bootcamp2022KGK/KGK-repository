@@ -69,6 +69,7 @@ body {
 
     &__line {
         width: 102%;
+        margin-top: 50px;
     }
 }
 
@@ -76,9 +77,11 @@ body {
     .collection__gallery {
         display: grid;
         grid-template-columns: auto auto auto;
+        margin-bottom: 200px;
     }
     .collection__line {
         width: 100%;
+        margin-top: 50px;
     }
 }
 
@@ -86,6 +89,11 @@ body {
     .collection__gallery {
         display: grid;
         grid-template-columns: auto auto;
+        margin-bottom: 500px;
+    }
+
+    .collection__line {
+        margin-top: 150px;
     }
 }
 
@@ -94,5 +102,12 @@ body {
         display: grid;
         gap: 0;
         grid-template-columns: auto;
+    }
+
+    .collection__gallery {
+        margin-bottom: 0px;
+    }
+    .collection__line {
+        margin-top: 50px;
     }
 }
