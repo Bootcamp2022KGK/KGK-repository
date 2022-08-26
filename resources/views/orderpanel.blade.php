@@ -34,18 +34,23 @@
                     <th>E-mail</th>
                     <th>m.Phone</th>
                 </tr>
-                <x-orderpanel-card />
-                <x-orderpanel-card />
-                <x-orderpanel-card />
-                <x-orderpanel-card />
-                <x-orderpanel-card />
-                <x-orderpanel-card />
-                <x-orderpanel-card />
-                <x-orderpanel-card />
-                <x-orderpanel-card />
-                <x-orderpanel-card />
-                <x-orderpanel-card />
-                <x-orderpanel-card />
+
+                @php
+                    $position = 1;
+                @endphp
+
+                @foreach ($data as $item)
+                    @php
+                        $item['position'] = $position;
+                    @endphp
+
+                    <x-order-panel-item :item="$item" />
+
+                    @php
+                        $position = $position + 1;
+                    @endphp
+                @endforeach
+
             </table>
         </div>
         <hr class="order__line">

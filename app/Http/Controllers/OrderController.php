@@ -47,4 +47,10 @@ class OrderController extends Controller
 
         return view('checkout', ['data' => $data]);
     }
+
+    public function getOrderPanel()
+    {
+        $orders = Order::get();
+        return view("orderpanel", ['data' => $orders]);
+    }
 }
