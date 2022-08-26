@@ -1,23 +1,39 @@
 @import "./website.scss";
 
+.about__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .about__photos img {
     padding: 10px 0 0 10px;
-    width: 350px;
-    height: 280px;
+    width: 30%;
+}
+.about__photos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .about__text h2,
 p {
-    flex-direction: column;
     padding: 10px;
-    gap: 10px;
-    width: 325px;
+}
+
+.about__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 5% 30px 5%;
 }
 
 .about__quality {
     display: flex;
-    flex-direction: column;
+    flex-direction: center;
     align-items: center;
+    justify-content: center;
     padding: 30px;
     gap: 16px;
     width: 375px;
@@ -39,8 +55,6 @@ p {
     p {
         flex-direction: column;
         padding: 10px;
-        gap: 10px;
-        width: 1000px;
     }
 
     .about__quality__frame {
