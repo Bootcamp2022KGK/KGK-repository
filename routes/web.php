@@ -67,3 +67,5 @@ Route::get('/welcome', function () {
 Route::get('/homepage', function () {
     return view('homepage');
 })->name('homepage');
+
+Route::get('/orderpanel', [OrderController::class, 'getOrderPanel']);
