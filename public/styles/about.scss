@@ -1,1 +1,70 @@
 @import "./website.scss";
+
+.about__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__photos img {
+    padding: 10px 0 0 10px;
+    width: 30%;
+}
+.about__photos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.about__text h2,
+p {
+    padding: 5px;
+}
+
+.about__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 5% 30px 5%;
+}
+
+.about__quality {
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    gap: 16px;
+    width: 375px;
+    height: 345px;
+    background: #f0f0f0;
+}
+
+.about__quality p {
+    width: 245px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #121212;
+}
+
+@media screen and (min-width: 500px) {
+    .about__quality h2,
+    p {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .about__quality__frame {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        gap: 16px;
+        width: 1065px;
+        height: 345px;
+        background: #f0f0f0;
+    }
+}
