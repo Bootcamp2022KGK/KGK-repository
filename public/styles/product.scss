@@ -1,14 +1,37 @@
 @import "./website.scss";
 
-.wrapper {
+.product {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .product__title {
-    margin-left: 850px;
+    margin-bottom: 10px;
+}
+
+.product__description {
+    margin: 10px 0 10px 0;
+}
+
+.product__size {
+    margin: 10px 0 10px 0;
+}
+
+.product__type {
+    margin: 10px 0 10px 0;
+}
+
+.product__color {
+    margin: 10px 0 10px 0;
+}
+
+.product__price {
+    margin: 10px 0 10px 0;
 }
 
 .card__button {
+    margin-top: 10px;
     display: flex;
     flex-direction: row;
     justify-content: center;
