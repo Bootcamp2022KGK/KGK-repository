@@ -8,11 +8,11 @@ const timesIcon = document.querySelector(".navigation_bar .menu_icon .times");
 let menuActive = false;
 let mobileScreen = false;
 
-window.onload = () => {
+window.addEventListener("load", () => {
     checkScreen();
     updateMenuIcons();
     updateNavElement();
-};
+});
 
 window.onresize = () => {
     checkScreen();

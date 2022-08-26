@@ -23,7 +23,9 @@
             <div class="cart__checkout">
                 <div class="cart__subtotal">Total: - EUR</div>
                 <div class="cart__subtotalinfo">Taxes and shipping calculated at checkout</div>
+                {{-- <a href="/checkout"> --}}
                 <button class="cart__buttonchekout">CheckOut</button>
+                {{-- </a> --}}
             </div>
             <hr class="cart__line">
             <x-footer />

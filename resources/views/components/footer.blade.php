@@ -5,19 +5,19 @@
             <div class="info__header">Quick links</div>
             <a class="info__link" href="/products">Rims</a>
             <a class="info__link" href="/repair">Repair</a>
-            <a class="info__link" href="/checkout">CheckOut</a>
+            <a class="info__link" href="/cart">Cart</a>
         </div>
         <div class="info">
             <div class="info__header">Infos</div>
             <a class="info__link" href="/about">About</a>
-            <a class="info__link" href="/contacts">Contact Us</a>
-            <a class="info__link" href="/shipping_policy">Shipping policy</a>
+            <a class="info__link" href="/contact">Contact Us</a>
+            <a class="info__link" href="/shipping_policy">Shipping Policy</a>
         </div>
     </div>
     <hr class="collection__line">
     <div class="social">
         <form action="" class="social__subscribe">
-            <input type="email" placeholder="Write Yor Email..." class="social__input">
+            <input type="email" placeholder="Write Your Email..." class="social__input">
             <button class="social__button">Send</button>
         </form>
         <div class="social__media">
