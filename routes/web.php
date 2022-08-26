@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\OrderController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
@@ -36,11 +37,18 @@ Route::get('orderpanel', function () {
 
 Route::get('/products/{manufacturer}/{model}/{size}', [ProductController::class, 'getProduct']);
 
+Route::get('/products/filter/{filter}', [ProductController::class, 'filterProducts']);
+
+Route::get('/products/sort/{sort}', [ProductController::class, 'sortProducts']);
+
 Route::get('/products', [ProductController::class, 'getAllProducts']);
 
 Route::get('/cart', function () {
     return view('cart');
 });
+
+Route::get('/checkout/{orderId}', [OrderController::class, 'getCheckout'])->name("checkout");
+
 ////this is about link page
 Route::get('/about', function () {
     return view('about');

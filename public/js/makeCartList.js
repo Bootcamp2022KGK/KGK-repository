@@ -1,6 +1,9 @@
 const cartProductTemplate = document.querySelector(".cartproduct.hidden");
 const cartBoxElement = document.querySelector(".cart__box");
 
+const checkoutButton = document.querySelector(".cart__buttonchekout");
+checkoutButton.addEventListener("click", (e) => completeCheckout(e));
+
 const sumTotalElement = document.querySelector(".cart__subtotal");
 let sumTotal = 0;
 
@@ -129,4 +132,25 @@ function updateSumTotal() {
     });
 
     sumTotalElement.innerHTML = "Total: " + sumTotal.toFixed(2) + " EUR";
+}
+
+function completeCheckout(e) {
+    // e.preventDefault();
+
+    const data = {}; // Get all product keys from localStorage
+
+    for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+
+        if (key.match(/kgk[0-9]+/)) {
+            data[key] = localStorage.getItem(key);
+        }
+    }
+
+    fetch("/api/processOrder", {
+        method: "POST",
+        body: JSON.stringify(data),
+    })
+        .then((response) => response.json())
+        .then((data) => window.location.replace(data.redirectURL));
 }
