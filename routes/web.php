@@ -39,6 +39,11 @@ Route::get('orderpanel', function () {
 
 });
 
+Route::get('adminproductspanel', function () {
+    return view('adminproductspanel');
+
+});
+
 Route::get('/products/{manufacturer}/{model}/{size}', [ProductController::class, 'getProduct']);
 
 Route::get('/products/filter/{filter}', [ProductController::class, 'filterProducts']);

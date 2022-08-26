@@ -17,13 +17,116 @@
 <body>
     <x-navbar />
 
-    <div class="landing">
-        <div class="landing__top">
-            <img class="landing__image"
-                src="https://w0.peakpx.com/wallpaper/761/99/HD-wallpaper-nissan-silvia-s13-tuning-ice-blue-rims-silvia-nissan-racing-bodykit-s13-gigantic-tuning-widebody-car-ice-r-drift-blue-race-car.jpg"
-                alt="lading rims" class="landing__image">
+    <div class="admin">
+        <div class="admin__top">
+            <div class="admin__title">
+                Admin products panel
+            </div>
+            <hr class="admin__line">
+            <div class="admin__text">
+                Input field form
+            </div>
+            <div class="admin__inputbox">
+                <form action="" class="admin__add">
+                    <table class="admin__inputtable" style="width:100%">
+                        <tr>
 
-            <a href="/about" class="landing__text"> Learn More</a>
+                            <th>code</th>
+                            <th>Name</th>
+                            <th>Manufacturer</th>
+                            <th>Model</th>
+                            <th>Type</th>
+                            <th>Color</th>
+                            <th>Size</th>
+                            <th>Price</th>
+                            <th>Description</th>
+                            <th>Picture_name</th>
+                            <td><button>Clear</button></td>
+                            </th>
+                        </tr>
+                        <tr>
+
+                            <td><input type="text" class="input__code"></td>
+                            <td><input type="text" class="input__code"></td>
+                            <td><input type="text" class="input__code"></td>
+                            <td><input type="text" class="input__code"></td>
+                            <td><input type="text" class="input__code"></td>
+                            <td><input type="text" class="input__code"></td>
+                            <td><input type="text" class="input__code"></td>
+                            <td><input type="text" class="input__code"></td>
+                            <td><input type="text" class="input__code"></td>
+                            <td><input type="text" class="input__code"></td>
+                            <td><button>Submit</button></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="admin__text">
+                Products field form
+            </div>
+            <hr class="admin__line">
+            <div class="admin__box">
+                <table class="admin__table" style="width:100%">
+                    <tr>
+                        <th>#</th>
+                        <th>code</th>
+                        <th>Name</th>
+                        <th>Manufacturer</th>
+                        <th>Model</th>
+                        <th>Type</th>
+                        <th>Color</th>
+                        <th>Size</th>
+                        <th>Price</th>
+                        <th>Description</th>
+                        <th>Picture_name</th>
+                    </tr>
+                    <!--input here-------------------->
+                    <tr>
+                        <td>1</td>
+                        <td>rh477t3t</td>
+                        <td>2022/08/26</td>
+                        <td>10000</td>
+                        <td>Ainārs</td>
+                        <td>Šlesers</td>
+                        <td>slesers@oligarhs.gov</td>
+                        <td>66889900</td>
+                        <td>Šlesers</td>
+                        <td>slesers@oligarhs.gov</td>
+                        <td>66889900</td>
+                    </tr>
+                    <!--input here-------------------->
+                    <tr>
+                        <td>1</td>
+                        <td>rh477t3t</td>
+                        <td>2022/08/26</td>
+                        <td>10000</td>
+                        <td>Ainārs</td>
+                        <td>Šlesers</td>
+                        <td>slesers@oligarhs.gov</td>
+                        <td>66889900</td>
+                        <td>Šlesers</td>
+                        <td>slesers@oligarhs.gov</td>
+                        <td>66889900</td>
+                    </tr>
+                    <!--input here-------------------->
+                    <tr>
+                        <td>1</td>
+                        <td>rh477t3t</td>
+                        <td>2022/08/26</td>
+                        <td>10000</td>
+                        <td>Ainārs</td>
+                        <td>Šlesers</td>
+                        <td>slesers@oligarhs.gov</td>
+                        <td>66889900</td>
+                        <td>Šlesers</td>
+                        <td>slesers@oligarhs.gov</td>
+                        <td>66889900</td>
+                    </tr>
+
+                </table>
+            </div>
+
+
         </div>
     </div>
 
