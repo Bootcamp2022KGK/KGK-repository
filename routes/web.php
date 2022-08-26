@@ -30,8 +30,13 @@ Route::get('/homepage', function () {
     return view('homepage');
 });
 
+
 Route::get('/contact', function () {
     return view('contact');
+
+Route::get('orderpanel', function () {
+    return view('orderpanel');
+
 });
 
 Route::get('/products/{manufacturer}/{model}/{size}', [ProductController::class, 'getProduct']);
