@@ -67,7 +67,7 @@
                     Add to Cart
                 </button>
             </a>
-
+            <x-footer />
         </div>
 </body>
 

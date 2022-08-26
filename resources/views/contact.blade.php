@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <x-navbar />
 
     <div class="contact">
         <h3>Working hours</h3>
