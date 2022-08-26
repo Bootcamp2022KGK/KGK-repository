@@ -152,5 +152,6 @@ function completeCheckout(e) {
         body: JSON.stringify(data),
     })
         .then((response) => response.json())
-        .then((data) => window.location.replace(data.redirectURL));
+        .then((data) => window.location.replace(data.redirectURL))
+        .then(() => localStorage.clear());
 }
