@@ -21,11 +21,11 @@
                 <img src="{{ asset("images/products/$image.jpg") }}" alt="">
             </div>
             <div class="product__title">
-                <span>
+                <span class="product__title">
                     {{ $product['manufacturer'] }}
                 </span>
                 <br>
-                <span>
+                <span class="product__title">
                     {{ $product['model'] }}
                 </span>
             </div>
@@ -36,18 +36,23 @@
                 {{ $product['description'] }}
             </p>
 
+            <hr class="product__line">
+
             <span class="product__size">
                 Size: {{ $product['size'] }}
             </span>
-            <br>
+            <hr class="product__line">
+
             <span class="product__type">
                 Type: {{ $product['type'] }}
             </span>
-            <br>
+            <hr class="product__line">
+
             <span class="product__color">
                 Color: {{ $product['color'] }}
             </span>
-            <br>
+            <hr class="product__line">
+
             <span class="product__price">
                 @php
                     $price = number_format($product['price'], 2);
