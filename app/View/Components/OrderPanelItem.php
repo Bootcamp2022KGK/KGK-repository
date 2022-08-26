@@ -21,7 +21,6 @@ class OrderPanelItem extends Component
         $this->total = $item->total;
         $this->client = $item->client;
         $this->position = $item->position;
-
     }
 
     /**

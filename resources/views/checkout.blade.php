@@ -19,6 +19,8 @@
             <x-order-item :data="$item" />
         @endforeach
     </div>
+
+    <h3>Total: {{ $data['orderData'][0]['total'] }}</h3>
     <x-footer />
 </body>
 
