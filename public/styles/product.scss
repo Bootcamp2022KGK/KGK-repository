@@ -1,5 +1,13 @@
 @import "./website.scss";
 
+.wrapper {
+    display: flex;
+}
+
+.product__title {
+    margin-left: 850px;
+}
+
 .card__button {
     display: flex;
     flex-direction: row;
