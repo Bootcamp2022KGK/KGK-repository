@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Order;
+use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -30,8 +31,20 @@ class OrderController extends Controller
 
     public function getCheckout($orderId)
     {
-        echo $orderId;
-        $data = 0;
-        return view('checkout', ['data ' => $data]);
+        $orderItems = DB::table('order_items')->where('orderId', $orderId)->get();
+        $data["orderId"] = $orderId;
+        $data['orderData'] = Order::where('id', $orderId)->get();
+        $data['items'] = [];
+
+        foreach ($orderItems as $item) {
+            $info = Product::where('code', $item->productCode)->first();
+            $quantity = $item->quantity;
+            $product = ['productData' => $info, 'quantity' => $quantity];
+            $data['items'][$item->productCode] = $product;
+        }
+
+        // dd($data);
+
+        return view('checkout', ['data' => $data]);
     }
 }
